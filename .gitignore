@@ -1,0 +1,9 @@
+# Ignore datasets
+ratings.csv
+movies.csv
+links.csv
+user_movie_matrix.csv
+
+# Ignore system files
+.DS_Store
+Thumbs.db

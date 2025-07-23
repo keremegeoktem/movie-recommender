@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <title>Second Selection</title>
+</head>
+<body id="page2">
+  <div class="welcome" id="welcome">Pick 3 movies you have seen and liked!</div>
+
+  <div class="drag-section" id="dragSection">
+    <div class="left-column movie-grid">
+      <!-- 10 draggable movie slots -->
+      <div class="movie-2" draggable="true">Loading...</div>
+      <div class="movie-2" draggable="true">Loading...</div>
+      <div class="movie-2" draggable="true">Loading...</div>
+      <div class="movie-2" draggable="true">Loading...</div>
+      <div class="movie-2" draggable="true">Loading...</div>
+      <div class="movie-2" draggable="true">Loading...</div>
+      <div class="movie-2" draggable="true">Loading...</div>
+      <div class="movie-2" draggable="true">Loading...</div>
+      <div class="movie-2" draggable="true">Loading...</div>
+      <div class="movie-2" draggable="true">Loading...</div>
+
+      <button class="refresh-button" onclick="handleRefresh(currentClusterId)">Refresh</button>
+      <div class="refresh-msg">Refresh if you have not seen or liked any of these movies!</div>
+    </div>
+
+    <div class="right-column">
+      <div class="instruction">
+        Select and drag a movie you have seen and liked to continue
+        <button class="feedback-toggle" onclick="toggleFeedbackPopup()" style="margin-left: 40px;">Give Feedback</button>
+      </div>
+
+      <div class="drop-zone">Drop here</div>
+      <div class="drop-zone">Drop here</div>
+      <div class="drop-zone">Drop here</div>
+
+      <div class="button-row">
+        <button class="reset-button" onclick="resetDropZones()">Reset</button>
+        <button class="continue-button" id="continueBtn" onclick="submitSelections()" disabled>Continue</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer" id="footer">Property of Kerem Ege Oktem</div> 
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+  <div class="feedback-popup" id="feedbackPopup">
+  <textarea id="feedbackText" placeholder="Let me know what’s wrong or could be better :)"></textarea>
+  <button onclick="submitFeedback()">Submit</button>
+  <button onclick="toggleFeedbackPopup()">Close</button>
+  <p id="feedbackConfirmation"></p>
+  </div>
+</body>
+</html>

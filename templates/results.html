@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+  <title>RESULTS!</title>
+</head>
+<body id="results">
+  <div class="results-container">
+    <div class="results-message" id="resultsMessage">Here are your movie recommendations!</div>
+
+    <div class="recommendation-grid results-hidden">
+      <div class="movie-display">Loading...</div>
+      <div class="movie-display">Loading...</div>
+      <div class="movie-display">Loading...</div>
+      <div class="movie-display">Loading...</div>
+      <div class="movie-display">Loading...</div>
+      <div class="movie-display">Loading...</div>
+      <div class="movie-display">Loading...</div>
+      <div class="movie-display">Loading...</div>
+      <div class="movie-display">Loading...</div>
+      <div class="movie-display">Loading...</div>
+    </div>
+
+    <a class="imdb-link results-hidden" href="https://www.imdb.com/" target="_blank">
+      Click on the movie you want to learn more about to check them out on IMDB!
+    </a>
+
+    <div class="results-controls results-hidden">
+      <button class="go-again-button" onclick="goAgain()">Go again?</button>
+      <button class="feedback-toggle" onclick="toggleFeedbackPopup()">Give Feedback</button>
+    </div>
+
+    <div class="feedback-popup results-hidden" id="feedbackPopup">
+      <textarea id="feedbackBox" placeholder="Your feedback..."></textarea>
+      <br />
+      <button onclick="submitFeedback()">Submit</button>
+      <button onclick="toggleFeedbackPopup()">Close</button>
+      <p id="feedbackStatus"></p>
+    </div>
+
+    <div class="footer results-hidden">© 2025 MovieMatch — Built by Kerem Ege Oktem</div>
+  </div>
+</body>
+</html>

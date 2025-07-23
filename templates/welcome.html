@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <title>Content-Based Movie Recommender</title>
+</head>
+<body id="welcomePage">
+  <div class="welcome" id="welcome">Welcome to MovieRecs!</div>
+  <div class="footer" id="footer">Property of Kerem Ege Oktem</div>
+
+  <div class="drag-section" id="dragSection">
+    <div class="left-column">
+      <div class="movie" draggable="true">Loading...</div>
+      <div class="movie" draggable="true">Loading...</div>
+      <div class="movie" draggable="true">Loading...</div>
+      <button class="refresh-button" onclick="refreshMovies()">Refresh</button>
+      <div class="refresh-msg">Refresh if you have not seen any of these movies!</div>
+    </div>
+
+    <div class="right-column">
+      <div class="instruction">Select and drag a movie you have seen and liked to continue</div>
+      <div class="arrow"></div>
+      <div class="drop-zone" id="drop-zone">Drop movie here</div>
+      <div class="button-row">
+        <button class="reset-button" id="resetBtn" onclick="resetSelection()">Reset</button>
+        <button class="continue-button" id="continueBtn" onclick="continuePage()" disabled>Continue</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
