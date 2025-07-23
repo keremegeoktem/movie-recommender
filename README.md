@@ -33,30 +33,30 @@ This project is a movie recommendation engine built from scratch using manual KM
 - The feedback button logs both the time/date and the feedback given in an Excel sheet named `feedback_log.csv` that the code also creates for the first time  
 
 ## Project Structure
-movie_recommender_app
-|
-├── app.py
-├── .gitignore
-├── requirements.txt
-├── feedback_log.xlsx
-├── movie_cluster_assignment.csv
-|
-├── BackEnd/
-|   ├── dataset.py
-|   ├── create.py
-|   ├── compare.py
-|   ├── manual_kmeans.py
-|   ├── kmeans_elbow_plot.png
-|   └── kmeans_log.csv
-|
-├── static/
-|   ├── style.css
-|   └── script.js
-|
-├── templates/
-|   ├── welcome.html
-|   ├── page2.html
-|   └── results.html
+movie_recommender_app  
+│  
+├── app.py  
+├── .gitignore  
+├── requirements.txt  
+├── feedback_log.xlsx  
+├── movie_cluster_assignments.csv  
+│  
+├── BackEnd/  
+│   ├── dataset.py  
+│   ├── create.py  
+│   ├── compare.py  
+│   ├── manual_kmeans.py  
+│   ├── kmeans_elbow_plot.png  
+│   └── kmeans_log.csv  
+│  
+├── static/  
+│   ├── style.css  
+│   └── script.js  
+│  
+├── templates/  
+    ├── welcome.html  
+    ├── page2.html  
+    └── results.html 
 
 ## Example features include
 1) Cluster-aware recommendations
