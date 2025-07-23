@@ -3,17 +3,17 @@
 This project is a movie recommendation engine built from scratch using manual KMeans
 
 ## Project Goals
-1- Learn how KMeans works by manually creating it from scratch
-2- Cluster movies based on user rating patterns
-3- Use 3 movie inputs from users to recommend movies to them deemed similar by the K Means algorithm.
-4- Use local storage to move and use data across pages
-5- Learn frontend basics: how to style a page and how to add individual functional elements
+1) Learn how KMeans works by manually creating it from scratch
+2) Cluster movies based on user rating patterns
+3) Use 3 movie inputs from users to recommend movies to them deemed similar by the K Means algorithm.
+4) Use local storage to move and use data across pages
+5) Learn frontend basics: how to style a page and how to add individual functional elements
 
 ## Important Notice:
-1- Since manual KMeans takes a lot of time and computing power (that my laptop does not have) I opted to use a faster version using scikit-learn library.
-2- The faster code is not inside here since it is not mine, but my manual implementation that works -but takes a really long time- is still present in the project file.
-3- The data used in this project is huge, so I will not upload it directly. If anybody wants to use this for any reason, here is the link to the dataset: https://grouplens.org/datasets/movielens/
-4- The specific data I am using is called MovieLens 32M. 
+1) Since manual KMeans takes a lot of time and computing power (that my laptop does not have) I opted to use a faster version using scikit-learn library.
+2) The faster code is not inside here since it is not mine, but my manual implementation that works -but takes a really long time- is still present in the project file.
+3) The data used in this project is huge, so I will not upload it directly. If anybody wants to use this for any reason, here is the link to the dataset: https://grouplens.org/datasets/movielens/
+4) The specific data I am using is called MovieLens 32M. 
 
 ## How it works
 ### BACKEND
